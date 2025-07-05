@@ -47,7 +47,7 @@ bash scripts/run_r2r_delan         # For R2R
 # bash scripts/run_cvdn_delan     # For CVDN
 ```
 
-* For inference, use the inference part commands(https://github.com/mengfeidu/DELAN/blob/ac8c9e7af7287a1928ebb1abd7216b20159d32e6/map_nav_src/scripts/run_r2r_delan.sh#L77-L82)
+* For inference, use the [inference part commands](https://github.com/mengfeidu/DELAN/blob/ac8c9e7af7287a1928ebb1abd7216b20159d32e6/map_nav_src/scripts/run_r2r_delan.sh#L77-L82)
 ```
 cd map_nav_src
 bash scripts/run_r2r_delan # (run_r4r_delan, run_rxr_delan, run_cvdn_delan)
