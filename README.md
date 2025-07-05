@@ -16,8 +16,45 @@ Vision-and-Language navigation (VLN) requires an agent to navigate in unseen env
 ## 🍸 Method
 ![](assets/overview.png)
 
+## Requirements
+1. Install Matterport3D simulators: follow instructions [here](https://github.com/peteanderson80/Matterport3DSimulator). 
+```
+export PYTHONPATH=Matterport3DSimulator/build:$PYTHONPATH
+```
+
+2. Install requirements:
+```setup
+conda create --name delan python=3.8 -y
+conda activate delan
+pip install -r requirements.txt
+```
+
+3. Download data from [Baidu Cloud](https://pan.baidu.com/s/1_dLTE1Y_VjEJMygR1ekTDA?pwd=7ip1), including processed annotations, connectivity, features and trained models of R2R, R4R, RxR and CVDN datasets. Put the data in `datasets' directory.
+
+4. Download tokenizer files from [Baidu Cloud](https://pan.baidu.com/s/1QUtl7bmcZeU3IaR9eB4K4Q?pwd=7ip1), Put these in `tokenizer_files' directory.
+
+
+## Training & Evaluation
+
+Take the VLA agent DUET at R2R as example:
+
+* For training, use the train lines.
+```
+cd map_nav_src
+bash scripts/run_r2r_delan # (run_r4r_delan, run_rxr_delan, run_cvdn_delan)
+```
+
+* For inference, use the inference lines.
+```
+cd map_nav_src
+bash scripts/run_r2r_delan # (run_r4r_delan, run_rxr_delan, run_cvdn_delan)
+
+The same things for HAMT in the hamt_src directory.
+```
+
+
 ## 🍻 TODOs
 
-- [ ] Upload pre-processed data.
-- [ ] Release DELAN code.
+- [x] Upload pre-processed data.
+- [x] Release DELAN code.
 
