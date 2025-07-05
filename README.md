@@ -38,19 +38,18 @@ pip install -r requirements.txt
 
 Take the VLA agent DUET at R2R as example:
 
-* To train the model, navigate to the map_nav_src and use the training part commands(https://github.com/mengfeidu/DELAN/blob/fbaf7bd7a75e9a0e06a70fb5b135de6836fc1aa2/map_nav_src/scripts/run_r2r_delan.sh#L70).
+* To train the model, navigate to the map_nav_src and use the [training part commands](https://github.com/mengfeidu/DELAN/blob/1827ca26b6752ea01ce52464bb0f4e46752377a4/map_nav_src/scripts/run_r2r_delan.sh#L70C1-L74C1).
 ```
-cd map_nav_src
 cd map_nav_src
 bash scripts/run_r2r_delan         # For R2R
 # bash scripts/run_r4r_delan      # For R4R
 # bash scripts/run_cvdn_delan     # For CVDN
 ```
 
-* For inference, use the [inference part commands](https://github.com/mengfeidu/DELAN/blob/ac8c9e7af7287a1928ebb1abd7216b20159d32e6/map_nav_src/scripts/run_r2r_delan.sh#L77-L82)
+* For inference, use the [inference part commands](https://github.com/mengfeidu/DELAN/blob/ac8c9e7af7287a1928ebb1abd7216b20159d32e6/map_nav_src/scripts/run_r2r_delan.sh#L77-L82).
 ```
 cd map_nav_src
-bash scripts/run_r2r_delan # (run_r4r_delan, run_rxr_delan, run_cvdn_delan)
+bash scripts/run_r4r_delan # (run_rxr_delan, run_cvdn_delan)
 ```
 
 To run HAMT, follow the same procedure in the hamt_src directory.
