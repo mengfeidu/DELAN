@@ -38,20 +38,22 @@ pip install -r requirements.txt
 
 Take the VLA agent DUET at R2R as example:
 
-* For training, use the train lines.
+* To train the model, navigate to the map_nav_src and use the training part commands(https://github.com/mengfeidu/DELAN/blob/fbaf7bd7a75e9a0e06a70fb5b135de6836fc1aa2/map_nav_src/scripts/run_r2r_delan.sh#L70).
+```
+cd map_nav_src
+cd map_nav_src
+bash scripts/run_r2r_delan         # For R2R
+# bash scripts/run_r4r_delan      # For R4R
+# bash scripts/run_cvdn_delan     # For CVDN
+```
+
+* For inference, use the inference part commands()
 ```
 cd map_nav_src
 bash scripts/run_r2r_delan # (run_r4r_delan, run_rxr_delan, run_cvdn_delan)
 ```
 
-* For inference, use the inference lines.
-```
-cd map_nav_src
-bash scripts/run_r2r_delan # (run_r4r_delan, run_rxr_delan, run_cvdn_delan)
-
-The same things for HAMT in the hamt_src directory.
-```
-
+To run HAMT, follow the same procedure in the hamt_src directory.
 
 ## 🍻 TODOs
 
