@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ## Training & Evaluation
 
-Take the VLN agent DUET at R2R as example:
+Take the VLN agent DUET as an example:
 
 * To train the model, navigate to the map_nav_src and use the [training part commands](https://github.com/mengfeidu/DELAN/blob/1827ca26b6752ea01ce52464bb0f4e46752377a4/map_nav_src/scripts/run_r2r_delan.sh#L70C1-L74C1).
 ```
