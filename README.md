@@ -41,15 +41,15 @@ Take the VLN agent DUET as an example:
 * To train the model, navigate to the map_nav_src and use the [training part commands](https://github.com/mengfeidu/DELAN/blob/1827ca26b6752ea01ce52464bb0f4e46752377a4/map_nav_src/scripts/run_r2r_delan.sh#L70C1-L74C1).
 ```
 cd map_nav_src
-bash scripts/run_r2r_delan         # For R2R
-# bash scripts/run_r4r_delan      # For R4R
-# bash scripts/run_cvdn_delan     # For CVDN
+bash scripts/run_r2r_delan.sh         # For R2R
+# bash scripts/run_r4r_delan.sh     # For R4R
+# bash scripts/run_cvdn_delan.sh     # For CVDN
 ```
 
 * For inference, use the [inference part commands](https://github.com/mengfeidu/DELAN/blob/ac8c9e7af7287a1928ebb1abd7216b20159d32e6/map_nav_src/scripts/run_r2r_delan.sh#L77-L82).
 ```
 cd map_nav_src
-bash scripts/run_r2r_delan # (run_r4r_delan, run_cvdn_delan)
+bash scripts/run_r2r_delan.sh # (run_r4r_delan.sh, run_cvdn_delan.sh)
 ```
 
 To run HAMT, follow the same procedure in the hamt_src directory.
